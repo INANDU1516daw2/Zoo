@@ -24,20 +24,48 @@ public class Mamifer extends Animal {
     }
 
     @Override
-    public Animal reproduir(String ID_pare, String ID_mare, String ID) {
-        Animal fill = new Mamifer();
-        return fill;
+    public void reproduir (String ID_pare, String ID_mare, String ID_fill) {
+        setID_pare(ID_pare);
+        setID_mare(ID_mare);
+        setID(ID_fill);
     }
 
     @Override
     public String toString() {
-        return "Mamifer {Nom: " + getNom() + '}';
+        return "Mamifer {Nom: " + getNom() + " ID: "+ getID() +" ID_Mare: "+ getID_mare() +
+                " ID_Pare: "+getID_pare()+" Edat: "+ getEdat() +". Femeni: "+ isFemeni() +
+                " Pes: "+ getPes() +" Esp_Vida: "+ getEsp_vida() +" Alimentació: "+ getAlimentacio() +
+                " \nReproducció: "+ getReproduccio() +" Ecosistema: "+ getEcosistema() +" Vacunació: "
+                + getVacunacio() +" Secció: "+ getSeccio() +"}";
     }
+    
+    
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        //son de la mateixa classe els 2 objectes ?
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        //LOWCASTING Empleat a obj
+        final Mamifer other = (Mamifer) obj;
+        //tenen el mateix nom ?
+        if(ID == other.ID) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+    
     
     @Override
     public boolean isVertebrat() {
         return vertebrat;
     }
+    
     public String getNom() {
         return nom;
     }

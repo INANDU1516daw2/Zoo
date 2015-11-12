@@ -18,7 +18,7 @@ protected String ecosistema;
 protected String vacunacio;
 protected String seccio;
 
-public abstract Animal reproduir(String ID_pare, String ID_mare, String ID);
+public abstract void reproduir(String ID_pare, String ID_mare, String ID);
 
 public abstract boolean isVertebrat();
 
