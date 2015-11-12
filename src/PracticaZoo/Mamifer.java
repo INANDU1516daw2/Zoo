@@ -35,7 +35,7 @@ public class Mamifer extends Animal {
         return "Mamifer {Nom: " + getNom() + " ID: "+ getID() +" ID_Mare: "+ getID_mare() +
                 " ID_Pare: "+getID_pare()+" Edat: "+ getEdat() +". Femeni: "+ isFemeni() +
                 " Pes: "+ getPes() +" Esp_Vida: "+ getEsp_vida() +" Alimentació: "+ getAlimentacio() +
-                " \nReproducció: "+ getReproduccio() +" Ecosistema: "+ getEcosistema() +" Vacunació: "
+                " \n\tReproducció: "+ getReproduccio() +" Ecosistema: "+ getEcosistema() +" Vacunació: "
                 + getVacunacio() +" Secció: "+ getSeccio() +"}";
     }
     
