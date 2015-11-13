@@ -1,6 +1,6 @@
 package PracticaZoo;
 
-//DONE
+// ES DIFERIDA PK TE METODES ABSTRACTES
 public abstract class Animal {
 
 protected String nom;
