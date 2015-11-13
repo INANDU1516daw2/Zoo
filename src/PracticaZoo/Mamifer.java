@@ -9,8 +9,8 @@ public class Mamifer extends Animal {
     public Mamifer(){
         this.nom = "no-catalogat";
         this.ID = "M000";
-        this.ID_pare = "MP00";
-        this.ID_mare = "MM00"; 
+        this.ID_pare = "M000";
+        this.ID_mare = "M000"; 
         this.edat = 0;
         this.femeni = true;
         this.pes = 0;
