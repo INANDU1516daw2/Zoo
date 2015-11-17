@@ -9,9 +9,9 @@ public class Peix extends Animal {
     
     public Peix(){
         this.nom = "no-catalogat";
-        this.ID = "P000";
-        this.ID_pare = "P000";
-        this.ID_mare = "P000"; 
+        this.ID = "PE00";
+        this.ID_pare = "PE00";
+        this.ID_mare = "PE00"; 
         this.edat = 0;
         this.femeni = true;
         this.pes = 0;
@@ -50,7 +50,7 @@ public class Peix extends Animal {
             return false;
         }
         //LOWCASTING Empleat a obj
-        final Mamifer other = (Mamifer) obj;
+        final Peix other = (Peix) obj;
         //tenen el mateix nom ?
         if(ID == other.ID) {
             return true;

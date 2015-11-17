@@ -8,9 +8,9 @@ public class Mamifer extends Animal {
     }
     public Mamifer(){
         this.nom = "no-catalogat";
-        this.ID = "M000";
-        this.ID_pare = "M000";
-        this.ID_mare = "M000"; 
+        this.ID = "MA00";
+        this.ID_pare = "MA00";
+        this.ID_mare = "MA00"; 
         this.edat = 0;
         this.femeni = true;
         this.pes = 0;
@@ -18,7 +18,7 @@ public class Mamifer extends Animal {
         this.vertebrat = true;
         this.alimentacio = "no-catalogat";
         this.reproduccio = "no-catalogat";
-        this.ecosistema = "no-catalogat";
+        this.ecosistema = "Terrestre";
         this.vacunacio = "no-catalogat";
         this.seccio = "no-catalogat";
     }
