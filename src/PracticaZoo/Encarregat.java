@@ -65,8 +65,20 @@ public class Encarregat extends Empleat implements Veterinari, Cuidador {
     }
 
     @Override
-    public void alimentar(String ID_encarregat, String nom_encarregat, String ID_animal, String nom_animal) {
-        System.out.println("Encarregat "+ID_encarregat+" de nom "+nom_encarregat+" ha alimentat a " + ID_animal+" de nom "+nom_animal);
+    public void alimentar(String ID_encarregat, String nom_encarregat, String ID_animal, String nom_animal, String tipus_aliment) {
+        System.out.print("Encarregat "+ID_encarregat+" de nom "+nom_encarregat+" ha alimentat a " + ID_animal+" de nom "+nom_animal);
+        if(tipus_aliment == "hervívor"){
+            System.out.println(" amb herba");
+        }
+        else if(tipus_aliment == "carnívor"){
+            System.out.println(" amb carn");
+        }
+        else if(tipus_aliment == "omnívor"){
+            System.out.println(" amb carn i herba");
+        }
+        else{
+            System.out.println(" {tipus de menjar no permitit}");
+        }
     }
 
     @Override

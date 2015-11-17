@@ -5,16 +5,18 @@ package PracticaZoo;
      public static void main(String[] args) {
          
          Mamifer mamifer_1 = new Mamifer();
-         mamifer_1.setNom("manolo");
-         mamifer_1.setRaça("Gorila");
+         mamifer_1.setNom("Manolo");
+         mamifer_1.setRaça("goril·la");
+         mamifer_1.setAlimentacio("hervívor");
          System.out.println(mamifer_1);
          
          Peix  peix_1 = new Peix();
-         peix_1.setNom("fishy");
+         peix_1.setNom("Fishy");
          System.out.println(peix_1);
          
          Reptil reptil_1 = new Reptil();
          reptil_1.setNom("Dragon");
+         reptil_1.setAlimentacio("omnívor");
          System.out.println(reptil_1);
          
          Au au_1 = new Au();
@@ -22,7 +24,7 @@ package PracticaZoo;
          System.out.println(au_1);
          
          Artropode artropode_1 = new Artropode();
-         artropode_1.setNom("bicho");
+         artropode_1.setNom("Bicho");
          System.out.println(artropode_1);
          
          Amfibi amfibi_1 = new Amfibi();
@@ -57,8 +59,8 @@ package PracticaZoo;
          
          Morote.netejar(Morote.getID(),Morote.getNom(),au_1.getID(),au_1.getNom());
          Morote.netejar(Morote.getID(),Morote.getNom(),reptil_1.getID(),reptil_1.getNom());
-         Morote.alimentar(Morote.getID(),Morote.getNom(),artropode_1.getID(),artropode_1.getNom());
-         Morote.alimentar(Morote.getID(),Morote.getNom(),mamifer_1.getID(),mamifer_1.getNom());
+         Morote.alimentar(Morote.getID(),Morote.getNom(),reptil_1.getID(),reptil_1.getNom(),reptil_1.getAlimentacio());
+         Morote.alimentar(Morote.getID(),Morote.getNom(),mamifer_1.getID(),mamifer_1.getNom(),mamifer_1.getAlimentacio());
                 
          
              
