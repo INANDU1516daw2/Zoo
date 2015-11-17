@@ -4,6 +4,7 @@ package PracticaZoo;
 public abstract class Animal {
 
 protected String nom;
+protected String raça;
 protected String ID;
 protected String ID_pare;
 protected String ID_mare; 

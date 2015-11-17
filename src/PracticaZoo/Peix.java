@@ -2,8 +2,9 @@ package PracticaZoo;
 
 public class Peix extends Animal {
 
-    public Peix (String nom,String ID,String ID_pare,String ID_mare,int edat, boolean femeni,float pes,int esp_vida,boolean vertebrat,String alimentacio,String reproduccio,String ecosistema,String vacunacio,String seccio){
+    public Peix (String nom,String raça,String ID,String ID_pare,String ID_mare,int edat, boolean femeni,float pes,int esp_vida,boolean vertebrat,String alimentacio,String reproduccio,String ecosistema,String vacunacio,String seccio){
         this.nom = nom;
+        this.raça = raça;
         this.ID = ID;
         this.ID_pare = ID_pare;
         this.ID_mare = ID_mare; 
@@ -21,6 +22,7 @@ public class Peix extends Animal {
     
     public Peix(){
         this.nom = "no-catalogat";
+        this.raça = "no-catalogat";
         this.ID = "PE00";
         this.ID_pare = "PE00";
         this.ID_mare = "PE00"; 
@@ -45,7 +47,7 @@ public class Peix extends Animal {
 
     @Override
     public String toString() {
-        return "\nPeix: { Nom: " + getNom() + " | ID: "+ getID() +" | ID_Mare: "+ getID_mare() +
+        return "\nPeix: { Nom: " + getNom() + " | Raça: "+ getRaça() +" | ID: "+ getID() +" | ID_Mare: "+ getID_mare() +
                 " | ID_Pare: "+getID_pare()+" | Edat: "+ getEdat() +" | Femeni: "+ isFemeni() +
                 " | Pes: "+ getPes() +" | Esp_Vida: "+ getEsp_vida() +" | Alimentació: "+ getAlimentacio() +
                 " \n\t | Reproducció: "+ getReproduccio() +" | Ecosistema: "+ getEcosistema() +" | Vacunació: "
@@ -77,6 +79,14 @@ public class Peix extends Animal {
 
     public void setNom(String nom) {
         this.nom = nom;
+    }
+    
+     public String getRaça() {
+        return raça;
+    }
+
+    public void setRaça(String raça) {
+        this.raça = raça;
     }
 
     public String getID() {

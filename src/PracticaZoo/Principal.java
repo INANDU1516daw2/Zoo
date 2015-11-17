@@ -6,6 +6,7 @@ package PracticaZoo;
          
          Mamifer mamifer_1 = new Mamifer();
          mamifer_1.setNom("manolo");
+         mamifer_1.setRaça("Gorila");
          System.out.println(mamifer_1);
          
          Peix  peix_1 = new Peix();

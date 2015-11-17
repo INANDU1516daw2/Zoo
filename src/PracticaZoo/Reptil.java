@@ -3,8 +3,9 @@ package PracticaZoo;
 public class Reptil extends Animal {
 
     //arg constructor
-    public Reptil (String nom,String ID,String ID_pare,String ID_mare,int edat, boolean femeni,float pes,int esp_vida,boolean vertebrat,String alimentacio,String reproduccio,String ecosistema,String vacunacio,String seccio){
+    public Reptil (String nom,String raça,String ID,String ID_pare,String ID_mare,int edat, boolean femeni,float pes,int esp_vida,boolean vertebrat,String alimentacio,String reproduccio,String ecosistema,String vacunacio,String seccio){
         this.nom = nom;
+        this.raça = raça;
         this.ID = ID;
         this.ID_pare = ID_pare;
         this.ID_mare = ID_mare; 
@@ -22,6 +23,7 @@ public class Reptil extends Animal {
     
     public Reptil(){
         this.nom = "no-catalogat";
+        this.raça = "no-catalogat";
         this.ID = "RE00";
         this.ID_pare = "RE00";
         this.ID_mare = "RE00"; 
@@ -46,7 +48,7 @@ public class Reptil extends Animal {
 
     @Override
     public String toString() {
-        return "\nReptil: { Nom: " + getNom() + " | ID: "+ getID() +" | ID_Mare: "+ getID_mare() +
+        return "\nReptil: { Nom: " + getNom() + " | Raça: "+ getRaça() +" | ID: "+ getID() +" | ID_Mare: "+ getID_mare() +
                 " | ID_Pare: "+getID_pare()+" | Edat: "+ getEdat() +" | Femeni: "+ isFemeni() +
                 " | Pes: "+ getPes() +" | Esp_Vida: "+ getEsp_vida() +" | Alimentació: "+ getAlimentacio() +
                 " \n\t | Reproducció: "+ getReproduccio() +" | Ecosistema: "+ getEcosistema() +" | Vacunació: "
@@ -85,6 +87,14 @@ public class Reptil extends Animal {
     }
     public void setNom(String nom) {
         this.nom = nom;
+    }
+    
+     public String getRaça() {
+        return raça;
+    }
+
+    public void setRaça(String raça) {
+        this.raça = raça;
     }
     public String getID() {
         return ID;
