@@ -5,12 +5,31 @@ package PracticaZoo;
      public static void main(String[] args) {
          
          Mamifer mamifer_1 = new Mamifer();
-//        Mamifer mamifer_2 = new Mamifer();
-//         
-//        mamifer_1.setID("M001");
-//        mamifer_2.setID("M002");
          mamifer_1.setNom("manolo");
-//        
+         System.out.println(mamifer_1);
+         
+         Peix  peix_1 = new Peix();
+         peix_1.setNom("fishy");
+         System.out.println(peix_1);
+         
+         Reptil reptil_1 = new Reptil();
+         reptil_1.setNom("Dragon");
+         System.out.println(reptil_1);
+         
+         Au au_1 = new Au();
+         au_1.setNom("Birdy");
+         System.out.println(au_1);
+         
+         Artropode artropode_1 = new Artropode();
+         artropode_1.setNom("bicho");
+         System.out.println(artropode_1);
+         
+         Amfibi amfibi_1 = new Amfibi();
+         amfibi_1.setNom("Ranita");
+         System.out.println(amfibi_1);
+         
+         
+         
 //        System.out.println(mamifer_1);
 //        System.out.println(mamifer_1.getNom());
 //        System.out.println("son iguals? " + mamifer_1.equals(mamifer_2));
