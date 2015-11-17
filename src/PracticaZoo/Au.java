@@ -2,9 +2,22 @@ package PracticaZoo;
 
 public class Au extends Animal {
 
-    public Au(String nom,String ID,String ID_pare,String ID_mare,int edat,
-            boolean femeni,float pes,int esp_vida,boolean vertebrat,String alimentacio,
-            String reproduccio,String ecosistema,String vacunacio,String seccio){
+    //arg constructor
+    public Au (String nom,String ID,String ID_pare,String ID_mare,int edat, boolean femeni,float pes,int esp_vida,boolean vertebrat,String alimentacio,String reproduccio,String ecosistema,String vacunacio,String seccio){
+        this.nom = nom;
+        this.ID = ID;
+        this.ID_pare = ID_pare;
+        this.ID_mare = ID_mare; 
+        this.edat = edat;
+        this.femeni = femeni;
+        this.pes = pes;
+        this.esp_vida = esp_vida;
+        this.vertebrat = vertebrat;
+        this.alimentacio = alimentacio;
+        this.reproduccio = reproduccio;
+        this.ecosistema = ecosistema;
+        this.vacunacio = vacunacio;
+        this.seccio = seccio;
     }
     
     public Au(){
@@ -33,12 +46,13 @@ public class Au extends Animal {
 
     @Override
     public String toString() {
-        return "Au {Nom: " + getNom() + " ID: "+ getID() +" ID_Mare: "+ getID_mare() +
-                " ID_Pare: "+getID_pare()+" Edat: "+ getEdat() +". Femeni: "+ isFemeni() +
-                " Pes: "+ getPes() +" Esp_Vida: "+ getEsp_vida() +" Alimentació: "+ getAlimentacio() +
-                " \n\tReproducció: "+ getReproduccio() +" Ecosistema: "+ getEcosistema() +" Vacunació: "
-                + getVacunacio() +" Secció: "+ getSeccio() +"}";
+        return "\nAu: { Nom: " + getNom() + " | ID: "+ getID() +" | ID_Mare: "+ getID_mare() +
+                " | ID_Pare: "+getID_pare()+" | Edat: "+ getEdat() +" | Femeni: "+ isFemeni() +
+                " | Pes: "+ getPes() +" | Esp_Vida: "+ getEsp_vida() +" | Alimentació: "+ getAlimentacio() +
+                " \n\t | Reproducció: "+ getReproduccio() +" | Ecosistema: "+ getEcosistema() +" | Vacunació: "
+                + getVacunacio() +" | Secció: "+ getSeccio() +" }\n";
     }
+    
     
     @Override
     public boolean equals(Object obj) {

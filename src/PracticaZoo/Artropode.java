@@ -2,9 +2,21 @@ package PracticaZoo;
 
 public class Artropode extends Animal {
 
-    public Artropode(String nom,String ID,String ID_pare,String ID_mare,int edat,
-            boolean femeni,float pes,int esp_vida,boolean vertebrat,String alimentacio,
-            String reproduccio,String ecosistema,String vacunacio,String seccio){
+    public Artropode (String nom,String ID,String ID_pare,String ID_mare,int edat, boolean femeni,float pes,int esp_vida,boolean vertebrat,String alimentacio,String reproduccio,String ecosistema,String vacunacio,String seccio){
+        this.nom = nom;
+        this.ID = ID;
+        this.ID_pare = ID_pare;
+        this.ID_mare = ID_mare; 
+        this.edat = edat;
+        this.femeni = femeni;
+        this.pes = pes;
+        this.esp_vida = esp_vida;
+        this.vertebrat = vertebrat;
+        this.alimentacio = alimentacio;
+        this.reproduccio = reproduccio;
+        this.ecosistema = ecosistema;
+        this.vacunacio = vacunacio;
+        this.seccio = seccio;
     }
     
     public Artropode(){
