@@ -42,15 +42,24 @@ package PracticaZoo;
 //        System.out.println(mamifer_3);
         
          
-         Encarregat Morote = new Encarregat();
-         Morote.setNom("Albert");
+         Encarregat Morote = new Encarregat("Morote","333",10,1800);
          System.out.println(Morote);
-         Morote.Alimentar();
+         
          
          Encarregat Grau = new Encarregat("Marta","666",13,1600);
          System.out.println(Grau);
          
-         Grau.vacunar(mamifer_1.getNom());
+         Grau.vacunar(Grau.getID(),Grau.getNom(),mamifer_1.getID(),mamifer_1.getNom());
+         Grau.vacunar(Grau.getID(),Grau.getNom(),reptil_1.getID(),reptil_1.getNom());
+         Grau.tractar(Grau.getID(),Grau.getNom(),peix_1.getID(),peix_1.getNom());
+         Grau.tractar(Grau.getID(),Grau.getNom(),au_1.getID(),au_1.getNom());
          
+         Morote.netejar(Morote.getID(),Morote.getNom(),au_1.getID(),au_1.getNom());
+         Morote.netejar(Morote.getID(),Morote.getNom(),reptil_1.getID(),reptil_1.getNom());
+         Morote.alimentar(Morote.getID(),Morote.getNom(),artropode_1.getID(),artropode_1.getNom());
+         Morote.alimentar(Morote.getID(),Morote.getNom(),mamifer_1.getID(),mamifer_1.getNom());
+                
+         
+             
      }
  }
