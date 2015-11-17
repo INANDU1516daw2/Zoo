@@ -49,21 +49,24 @@ public class Encarregat extends Empleat implements Veterinari, Cuidador {
     }
 
     @Override
-    public void vacunar(String nom_animal) {
-        System.out.println("S'ha cavunat a " + nom_animal);
+    public void vacunar(String ID_encarregat, String nom_encarregat, String ID_animal, String nom_animal) {
+        System.out.println("Encarregat "+ID_encarregat+" de nom "+nom_encarregat+" ha vacunat a " + ID_animal+" de nom "+nom_animal);
     }
 
     @Override
-    public void tractar() {
+    public void tractar(String ID_encarregat, String nom_encarregat, String ID_animal, String nom_animal) {
+        System.out.println("Encarregat "+ID_encarregat+" de nom "+nom_encarregat+" ha tractat a " + ID_animal+" de nom "+nom_animal);
     }
 
     @Override
-    public void Netejar() {
+    public void netejar(String ID_encarregat, String nom_encarregat, String ID_animal, String nom_animal) {
+                System.out.println("Encarregat "+ID_encarregat+" de nom "+nom_encarregat+" ha netejat a " + ID_animal+" de nom "+nom_animal);
+
     }
 
     @Override
-    public void Alimentar() {
-        System.out.println("S'ha alimentat al animal");
+    public void alimentar(String ID_encarregat, String nom_encarregat, String ID_animal, String nom_animal) {
+        System.out.println("Encarregat "+ID_encarregat+" de nom "+nom_encarregat+" ha alimentat a " + ID_animal+" de nom "+nom_animal);
     }
 
     @Override
