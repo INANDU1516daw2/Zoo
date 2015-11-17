@@ -52,17 +52,20 @@ package PracticaZoo;
          Encarregat Grau = new Encarregat("Marta","666",13,1600);
          System.out.println(Grau);
          
-         Grau.vacunar(Grau.getID(),Grau.getNom(),mamifer_1.getID(),mamifer_1.getNom());
-         Grau.vacunar(Grau.getID(),Grau.getNom(),reptil_1.getID(),reptil_1.getNom());
-         Grau.tractar(Grau.getID(),Grau.getNom(),peix_1.getID(),peix_1.getNom());
-         Grau.tractar(Grau.getID(),Grau.getNom(),au_1.getID(),au_1.getNom());
+         Grau.vacunar_mamifer(Grau, mamifer_1, "SIDA");
+         Grau.vacunar_mamifer(Grau, mamifer_1, "rabia");
          
-         Morote.netejar(Morote.getID(),Morote.getNom(),au_1.getID(),au_1.getNom());
-         Morote.netejar(Morote.getID(),Morote.getNom(),reptil_1.getID(),reptil_1.getNom());
-         Morote.alimentar(Morote.getID(),Morote.getNom(),reptil_1.getID(),reptil_1.getNom(),reptil_1.getAlimentacio());
-         Morote.alimentar(Morote.getID(),Morote.getNom(),mamifer_1.getID(),mamifer_1.getNom(),mamifer_1.getAlimentacio());
-                
+         Grau.vacunar_au(Grau, au_1, "eimerias");
          
+//         Grau.tractar(Grau.getID(),Grau.getNom(),peix_1.getID(),peix_1.getNom());
+//         Grau.tractar(Grau.getID(),Grau.getNom(),au_1.getID(),au_1.getNom());
+//         
+//         Morote.netejar(Morote.getID(),Morote.getNom(),au_1.getID(),au_1.getNom());
+//         Morote.netejar(Morote.getID(),Morote.getNom(),reptil_1.getID(),reptil_1.getNom());
+//         Morote.alimentar(Morote.getID(),Morote.getNom(),reptil_1.getID(),reptil_1.getNom(),reptil_1.getAlimentacio());
+//         Morote.alimentar(Morote.getID(),Morote.getNom(),mamifer_1.getID(),mamifer_1.getNom(),mamifer_1.getAlimentacio());
+//                
+//         
              
      }
  }
