@@ -128,10 +128,12 @@ public class Encarregat extends Empleat implements Veterinari, Cuidador {
         }
     }
 
-    @Override
+ @Override
     public String toString() {
-        return "Encarregat{" + "nom: " + nom + '}';
+        return "\nEncarregat: { Nom: " + getNom() + " | ID: "+ getID() +" | Secció: "+ getID() +" | Sou: "+ getSou()+" }\n";
+                
     }
+    
     
 
 }
