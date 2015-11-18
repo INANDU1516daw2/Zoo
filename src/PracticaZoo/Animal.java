@@ -1,6 +1,8 @@
 package PracticaZoo;
 
-// ES DIFERIDA PK TE METODES ABSTRACTES
+/**
+ * Creació de la classe diferida Animal
+ */
 public abstract class Animal {
 
 protected String nom;
@@ -19,8 +21,17 @@ protected String ecosistema;
 protected String vacunacio;
 protected String seccio;
 
+/**
+ * Pasem 3 ID i les guarda amb un set
+ * @param ID_pare
+ * @param ID_mare
+ * @param ID 
+ */
 public abstract void reproduir(String ID_pare, String ID_mare, String ID);
 
+/**
+ * Diu si l'objecte té l'atribut boolean vertebrat FALSE o TRUE.
+ */
 public abstract boolean isVertebrat();
 
 }

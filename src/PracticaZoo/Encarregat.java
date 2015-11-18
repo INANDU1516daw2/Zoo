@@ -4,51 +4,111 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.ArrayList;
-
+/**
+ * Creció de la classe Encarregat que hereta de Empleat i implementa les interfícies Cuidador i Veterinari
+ */
 public class Encarregat extends Empleat implements Veterinari, Cuidador {
-    
+    /**
+     * Constructor amb paràmetres
+     * @param nom
+     * @param ID
+     * @param seccio
+     * @param sou 
+     */
     public Encarregat(String nom, String ID, int seccio, double sou) {
         this.nom = nom;
         this.ID = ID;
         this.seccio = seccio;
         this.sou = sou;
     }
-
+    
+    /**
+     * Constructor per defecte, amb valors per defecte
+     */
     public Encarregat() {
         nom = "desconegut";
         ID = "desconeguda";
         seccio = 0;
         sou = 648.99;
     }
-
+    
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        //son de la mateixa classe els 2 objectes ?
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        //LOWCASTING
+        final Encarregat other = (Encarregat) obj;
+        //tenen el mateix nom ?
+        if(ID == other.ID) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+    /**
+     * Agafa nom
+     * @return nom 
+     */
     public String getNom() {
         return nom;
     }
 
+    /**
+     * Defineix nom
+     * @param nom 
+     */
     public void setNom(String nom) {
         this.nom = nom;
     }
 
+    /**
+     * Agafa ID
+     * @return ID 
+     */
     public String getID() {
         return ID;
     }
 
+    /**
+     * Defineix ID
+     * @param ID 
+     */
     public void setID(String ID) {
         this.ID = ID;
     }
 
+    /**
+     * Agafa seccio
+     * @return seccio 
+     */
     public int getSeccio() {
         return seccio;
     }
 
+    /**
+     * Defineix seccio
+     * @param seccio 
+     */
     public void setSeccio(int seccio) {
         this.seccio = seccio;
     }
 
+    /**
+     * Agafa sou
+     * @return sou 
+     */
     public double getSou() {
         return sou;
     }
 
+    /**
+     * Defineix sou
+     * @param sou 
+     */
     public void setSou(double sou) {
         this.sou = sou;
     }
@@ -128,6 +188,9 @@ public class Encarregat extends Empleat implements Veterinari, Cuidador {
         }
     }
 
+    /**
+     * Reimplementacio de la cadena toString()
+     */
  @Override
     public String toString() {
         return "\nEncarregat: { Nom: " + getNom() + " | ID: "+ getID() +" | Secció: "+ getID() +" | Sou: "+ getSou()+" }\n";

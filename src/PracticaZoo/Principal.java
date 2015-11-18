@@ -1,9 +1,16 @@
 package PracticaZoo;
- 
+ /**
+  * 
+  * @author Albert Morote
+  * @author Marta Grau
+  * @author Ingemar Andrade
+  */
  public class Principal {
      
      public static void main(String[] args) {
-         
+         /**
+          * Creacio de animals
+          */
          Mamifer mamifer_1 = new Mamifer();
          mamifer_1.setNom("Manolo");
          mamifer_1.setRaça("goril·la");

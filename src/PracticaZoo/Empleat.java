@@ -1,5 +1,7 @@
 package PracticaZoo;
-
+/**
+ * Creació de la classe Empleat
+ */
 public abstract class Empleat {
     
     protected String nom;

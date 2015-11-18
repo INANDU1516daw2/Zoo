@@ -1,9 +1,32 @@
 package PracticaZoo;
-
+/**
+ * Interfície anomenada Veterinari
+ */
 public interface Veterinari {
     
+    /**
+     * Es vacuna un mamífer
+     * @param encargat
+     * @param mamifer
+     * @param vacunacio 
+     */
     public void vacunar_mamifer (Encarregat encargat, Mamifer mamifer, String vacunacio);
+    
+    /**
+     * Es vacuna un au
+     * @param encargat
+     * @param au
+     * @param vacunacio 
+     */
     public void vacunar_au (Encarregat encargat, Au au, String vacunacio);
+    
+    /**
+     * Es tracta un animal
+     * @param ID_encarregat
+     * @param nom_encarregat
+     * @param ID_animal
+     * @param nom_animal 
+     */
     public void tractar(String ID_encarregat, String nom_encarregat, String ID_animal, String nom_animal);
     
 }
