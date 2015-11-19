@@ -59,7 +59,7 @@ package PracticaZoo;
          Encarregat Grau = new Encarregat("Marta","666",13,1600);
          System.out.println(Grau);
          
-         Grau.vacunar_mamifer(Grau, mamifer_1, "SIDA");
+         Grau.vacunar_mamifer(Grau, mamifer_1, "colesterol");
          Grau.vacunar_mamifer(Grau, mamifer_1, "rabia");
          
          Grau.vacunar_au(Grau, au_1, "eimerias");

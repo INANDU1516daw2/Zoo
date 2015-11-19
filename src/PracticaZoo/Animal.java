@@ -22,7 +22,7 @@ protected String vacunacio;
 protected String seccio;
 
 /**
- * Pasem 3 ID i les guarda amb un set
+ * Passem 3 ID i les guarda amb un set
  * @param ID_pare
  * @param ID_mare
  * @param ID 

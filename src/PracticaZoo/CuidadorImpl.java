@@ -1,5 +1,9 @@
 package PracticaZoo;
 
+/**
+ * Creació de la classe que fa una implementació de la interfície Cuidador
+ */
+
 public class CuidadorImpl implements Cuidador {
 
     /**

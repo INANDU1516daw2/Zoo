@@ -113,6 +113,14 @@ public class Encarregat extends Empleat implements Veterinari, Cuidador {
         this.sou = sou;
     }
 
+    
+    /**
+     * El objecte encarregat vacuna al objecte mamífer si la vacuna pasada com argument està continguda en la llista vacunes
+     * @param encargat
+     * @param mamifer
+     * @param vacunacio 
+     */
+    
     @Override
     public void vacunar_mamifer (Encarregat encargat, Mamifer mamifer, String vacunacio) {
         ArrayList <String> vacunas_mamifer = new ArrayList <>();
@@ -124,53 +132,83 @@ public class Encarregat extends Empleat implements Veterinari, Cuidador {
         GregorianCalendar gc = new GregorianCalendar();
         gc.setTime(data);
         
+        boolean vacuna_permesa = false;
+        
         for(String vacuna : vacunas_mamifer){
-            if(vacunacio == vacuna){
+            if(vacunacio.equals(vacuna)){
+                vacuna_permesa = true;
                 System.out.println("Encarregat "+encargat.getID()+" de nom "+encargat.getNom()+
                         " ha vacunat a " +mamifer.getID()+" de nom "+mamifer.getNom()+" amb anti-"+vacunacio+
                         " en el dia "+gc.get(Calendar.DAY_OF_MONTH) +" en mes "+gc.get(Calendar.MONTH)+
-                        " de "+gc.get(Calendar.YEAR) + " a la "+gc.get(Calendar.HOUR_OF_DAY)+"h");
+                        " de "+gc.get(Calendar.YEAR) + " a las "+gc.get(Calendar.HOUR_OF_DAY)+":"+gc.get(Calendar.MINUTE)+":"
+                        +gc.get(Calendar.SECOND));
                 break;
-            }else{
-                System.out.println("Vacuna " + vacunacio + " no permesa en mamifers");
-                break;
-            }
+            }              
+        }
+        if(vacuna_permesa == false){
+            System.out.println("Vacuna " + vacunacio + " no permesa en mamifers");
         }
     }
     
     
-    //PREGUNTAR A SERGI
+    /**
+     * El objecte encarregat vacuna al objecte au si la vacuna pasada com argument està continguda en la llista vacunes
+     * @param encargat
+     * @param au
+     * @param vacunacio 
+     */
     @Override
     public void vacunar_au (Encarregat encargat, Au au, String vacunacio) {
         ArrayList <String> llista_vacunas_aus = new ArrayList <>();
-        llista_vacunas_aus.add("gorombo");
-        llista_vacunas_aus.add("salmonela");
         llista_vacunas_aus.add("eimerias");
+        llista_vacunas_aus.add("salmonela");
         
+        Date data = new Date();
+        GregorianCalendar gc = new GregorianCalendar();
+        gc.setTime(data);
+        
+        boolean vacuna_permesa = false;
         for(String e : llista_vacunas_aus){
             if(vacunacio.equals(e)){
+                vacuna_permesa = true;
                 System.out.println("Encarregat "+encargat.getID()+" de nom "+encargat.getNom()+
-                        " ha vacunat a " +au.getID()+" de nom "+au.getNom()+" amb anti-"+vacunacio);
+                        " ha vacunat a " +au.getID()+" de nom "+au.getNom()+" amb anti-"+vacunacio+
+                        " en el dia "+gc.get(Calendar.DAY_OF_MONTH) +" en mes "+gc.get(Calendar.MONTH)+
+                        " de "+gc.get(Calendar.YEAR) + " a las "+gc.get(Calendar.HOUR_OF_DAY)+":"+gc.get(Calendar.MINUTE)+":"
+                        +gc.get(Calendar.SECOND));
                 break;
             }
-            else{
-                System.out.println("Vacuna " + vacunacio + " no permesa en aus");
-                break;
+            if(vacuna_permesa == false){
+                 System.out.println("Vacuna " + vacunacio + " no permesa en aus");
             }
         }
     }
 
+    /**
+     * @see Veterinari
+     */
+    
     @Override
     public void tractar(String ID_encarregat, String nom_encarregat, String ID_animal, String nom_animal) {
         System.out.println("Encarregat "+ID_encarregat+" de nom "+nom_encarregat+" ha tractat a " + ID_animal+" de nom "+nom_animal);
     }
 
+    /**
+     * @see Veterinari
+     */
     @Override
     public void netejar(String ID_encarregat, String nom_encarregat, String ID_animal, String nom_animal) {
                 System.out.println("Encarregat "+ID_encarregat+" de nom "+nom_encarregat+" ha netejat a " + ID_animal+" de nom "+nom_animal);
-
     }
 
+    /**
+     * El objecte encarregat alimenta al objecte animal si el tipus de menjar esta permès
+     * @param ID_encarregat
+     * @param nom_encarregat
+     * @param ID_animal
+     * @param nom_animal
+     * @param tipus_aliment 
+     */
     @Override
     public void alimentar(String ID_encarregat, String nom_encarregat, String ID_animal, String nom_animal, String tipus_aliment) {
         System.out.print("Encarregat "+ID_encarregat+" de nom "+nom_encarregat+" ha alimentat a " + ID_animal+" de nom "+nom_animal);
@@ -188,15 +226,10 @@ public class Encarregat extends Empleat implements Veterinari, Cuidador {
         }
     }
 
-    /**
-     * Reimplementacio de la cadena toString()
-     */
- @Override
+    @Override
     public String toString() {
-        return "\nEncarregat: { Nom: " + getNom() + " | ID: "+ getID() +" | Secció: "+ getID() +" | Sou: "+ getSou()+" }\n";
-                
+        return "Encarregat{" + "nom: " + nom + '}';
     }
-    
     
 
 }

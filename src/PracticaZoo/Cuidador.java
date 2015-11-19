@@ -1,5 +1,9 @@
 package PracticaZoo;
 
+/**
+ * Interfície anomenada Cuidador
+ */
+
 public interface Cuidador {
     
     /**
