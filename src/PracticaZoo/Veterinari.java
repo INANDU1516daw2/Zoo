@@ -10,7 +10,7 @@ public interface Veterinari {
      * @param mamifer
      * @param vacunacio 
      */
-    public void vacunar_mamifer (Encarregat encargat, Mamifer mamifer, String vacunacio);
+    public void vacunar_mamifer (Encarregat encarregat, Mamifer mamifer, String vacunacio);
     
     /**
      * Es vacuna un au
@@ -18,7 +18,7 @@ public interface Veterinari {
      * @param au
      * @param vacunacio 
      */
-    public void vacunar_au (Encarregat encargat, Au au, String vacunacio);
+    public void vacunar_au (Encarregat encarregat, Au au, String vacunacio);
     
     /**
      * Es tracta un animal
