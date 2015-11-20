@@ -116,13 +116,13 @@ public class Encarregat extends Empleat implements Veterinari, Cuidador {
     
     /**
      * El objecte encarregat vacuna al objecte mamífer si la vacuna pasada com argument està continguda en la llista vacunes
-     * @param encargat
+     * @param encarregat
      * @param mamifer
      * @param vacunacio 
      */
     
     @Override
-    public void vacunar_mamifer (Encarregat encargat, Mamifer mamifer, String vacunacio) {
+    public void vacunar_mamifer (Encarregat encarregat, Mamifer mamifer, String vacunacio) {
         ArrayList <String> vacunas_mamifer = new ArrayList <>();
         vacunas_mamifer.add("rabia");
         vacunas_mamifer.add("mixomatosis");
@@ -137,7 +137,7 @@ public class Encarregat extends Empleat implements Veterinari, Cuidador {
         for(String vacuna : vacunas_mamifer){
             if(vacunacio.equals(vacuna)){
                 vacuna_permesa = true;
-                System.out.println("Encarregat "+encargat.getID()+" de nom "+encargat.getNom()+
+                System.out.println("Encarregat "+encarregat.getID()+" de nom "+encarregat.getNom()+
                         " ha vacunat a " +mamifer.getID()+" de nom "+mamifer.getNom()+" amb anti-"+vacunacio+
                         " en el dia "+gc.get(Calendar.DAY_OF_MONTH) +" en mes "+gc.get(Calendar.MONTH)+
                         " de "+gc.get(Calendar.YEAR) + " a las "+gc.get(Calendar.HOUR_OF_DAY)+":"+gc.get(Calendar.MINUTE)+":"

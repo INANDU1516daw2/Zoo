@@ -1,4 +1,10 @@
 package PracticaZoo;
+
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.Random;
+
 /**
  * Creacio de la classe Amfibi que hereta de Animal
  * 
@@ -64,10 +70,36 @@ public class Amfibi extends Animal {
      * @see Animal
      */
     @Override
-    public void reproduir (String ID_pare, String ID_mare, String ID_fill) {
-        setID_pare(ID_pare);
-        setID_mare(ID_mare);
-        setID(ID_fill);
+    public void reproduir (String ID_pare, String raça_p, String ID_mare, String raça_m, String ID_fill) {
+        
+        if(raça_p != raça_m){
+            Random rnd = new Random();
+            int r = (int)(rnd.nextDouble() * 2 + 1);
+                if(r==1){
+                    System.out.println("Ha sortit de raça "+raça_p);
+                    this.setRaça(raça_p);
+                    
+                }else if(r==2){
+                    System.out.println("Ha sortit de raça "+raça_m);
+                     this.setRaça(raça_m);
+                }
+        }else{
+            this.setRaça(raça_m);
+        }
+        
+            this.setID_pare(ID_pare);
+            this.setID_mare(ID_mare);
+            this.setID(ID_fill);
+            this.setEdat(1);
+            
+            Date data = new Date();
+            GregorianCalendar gc = new GregorianCalendar();
+            gc.setTime(data);
+
+            System.out.println("De la relació de "+ID_pare+" i "+ID_mare+" ha nascut "+ID_fill
+                            +" en el dia "+gc.get(Calendar.DAY_OF_MONTH) +" en el mes "+gc.get(Calendar.MONTH)
+                        +" de "+gc.get(Calendar.YEAR) + " a las "+gc.get(Calendar.HOUR_OF_DAY)
+                        +":"+gc.get(Calendar.MINUTE)+":"+gc.get(Calendar.SECOND));
     }
     /**
      * Reimplementacio de la cadena toString()

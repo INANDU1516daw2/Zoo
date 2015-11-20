@@ -27,7 +27,7 @@ protected String seccio;
  * @param ID_mare
  * @param ID 
  */
-public abstract void reproduir(String ID_pare, String ID_mare, String ID);
+public abstract void reproduir(String ID_pare, String raça_p, String ID_mare, String raça_m, String ID_fill);
 
 /**
  * Diu si l'objecte té l'atribut boolean vertebrat FALSE o TRUE.
