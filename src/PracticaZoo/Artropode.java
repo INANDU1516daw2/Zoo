@@ -268,6 +268,7 @@ public class Artropode extends Animal {
      * Agafa vertebrat
      * @return vertebrat 
      */
+    @Override
     public boolean isVertebrat() {
         return vertebrat;
     }
