@@ -44,7 +44,7 @@ public class Reptil extends Animal {
         this.reproduccio = reproduccio;
         this.ecosistema = ecosistema;
         this.vacunacio = vacunacio;
-        this.seccio = "SECCIÓ 06";
+        this.seccio = "06";
     }
     
     /**
@@ -128,7 +128,7 @@ public class Reptil extends Animal {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        //LOWCASTING
+        //DOWNCASTING
         final Reptil other = (Reptil) obj;
         //tenen el mateix nom ?
         if(ID == other.ID) {

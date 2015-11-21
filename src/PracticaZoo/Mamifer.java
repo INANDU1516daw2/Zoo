@@ -29,7 +29,7 @@ public class Mamifer extends Animal {
      * @param vacunacio
      * @param seccio 
      */
-    public Mamifer(String nom,String raça,String ID,String ID_pare,String ID_mare,int edat, boolean femeni,float pes,int esp_vida,boolean vertebrat,String alimentacio,String reproduccio,String ecosistema,String vacunacio){
+    public Mamifer(String nom,String raça,String ID,String ID_pare,String ID_mare,int edat, boolean femeni,float pes,int esp_vida,boolean vertebrat,String alimentacio,String reproduccio,String ecosistema,String vacunacio,String seccio){
         this.nom = nom;
         this.raça = raça;
         this.ID = ID;
@@ -44,7 +44,7 @@ public class Mamifer extends Animal {
         this.reproduccio = reproduccio;
         this.ecosistema = ecosistema;
         this.vacunacio = vacunacio;
-        this.seccio = "SECCIÓ 01";
+        this.seccio = "01";
     }
     
     /**
@@ -65,7 +65,7 @@ public class Mamifer extends Animal {
         this.reproduccio = "no-catalogat";
         this.ecosistema = "Terrestre";
         this.vacunacio = "no-catalogat";
-        this.seccio = "SECCIÓ 01";
+        this.seccio = "01";
     }
     
     /**

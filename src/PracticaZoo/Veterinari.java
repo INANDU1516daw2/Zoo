@@ -6,7 +6,7 @@ public interface Veterinari {
     
     /**
      * Es vacuna un mamífer
-     * @param encargat
+     * @param encarregat
      * @param mamifer
      * @param vacunacio 
      */
@@ -14,7 +14,7 @@ public interface Veterinari {
     
     /**
      * Es vacuna un au
-     * @param encargat
+     * @param encarregat
      * @param au
      * @param vacunacio 
      */

@@ -44,7 +44,7 @@ public class Amfibi extends Animal {
         this.reproduccio = reproduccio;
         this.ecosistema = ecosistema;
         this.vacunacio = vacunacio;
-        this.seccio = "SECCIÓ 02";
+        this.seccio = "02";
     }
     /**
      * Constructor per defecte, amb valors per defecte
@@ -64,7 +64,7 @@ public class Amfibi extends Animal {
         this.reproduccio = "no-catalogat";
         this.ecosistema = "Aquàtic";
         this.vacunacio = "no-catalogat";
-        this.seccio = "SECCIÓ 02";
+        this.seccio = "02";
     }
     /**
      * @see Animal

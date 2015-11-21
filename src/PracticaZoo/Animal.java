@@ -28,7 +28,6 @@ protected String seccio;
  * @param ID_mare
  * @param raça_m
  * @param ID_fill
- * @param ID 
  */
 public abstract void reproduir(String ID_pare, String raça_p, String ID_mare, String raça_m, String ID_fill);
 

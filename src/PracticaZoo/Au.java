@@ -44,7 +44,7 @@ public class Au extends Animal {
         this.reproduccio = reproduccio;
         this.ecosistema = ecosistema;
         this.vacunacio = vacunacio;
-        this.seccio = "SECCIÓ 04";
+        this.seccio = "04";
     }
     
     /**
@@ -65,7 +65,7 @@ public class Au extends Animal {
         this.reproduccio = "no-catalogat";
         this.ecosistema = "Volador";
         this.vacunacio = "no-catalogat";
-        this.seccio = "SECCIÓ 04";
+        this.seccio = "04";
     }
     
     /**

@@ -44,7 +44,7 @@ public class Artropode extends Animal {
         this.reproduccio = reproduccio;
         this.ecosistema = ecosistema;
         this.vacunacio = vacunacio;
-        this.seccio = "SECCIÓ 03";
+        this.seccio = "03";
     }
     
     /**
@@ -65,7 +65,7 @@ public class Artropode extends Animal {
         this.reproduccio = "no-catalogat";
         this.ecosistema = "Terrestre";
         this.vacunacio = "no-catalogat";
-        this.seccio = "SECCIÓ 03";
+        this.seccio = "03";
     }
     
     /**

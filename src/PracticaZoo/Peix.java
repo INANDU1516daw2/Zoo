@@ -44,7 +44,7 @@ public class Peix extends Animal {
         this.reproduccio = reproduccio;
         this.ecosistema = ecosistema;
         this.vacunacio = vacunacio;
-        this.seccio = "SECCIÓ 05";
+        this.seccio = "05";
     }
     
     /**
@@ -65,7 +65,7 @@ public class Peix extends Animal {
         this.reproduccio = "no-catalogat";
         this.ecosistema = "Aquàtic";
         this.vacunacio = "no-catalogat";
-        this.seccio = "SECCIÓ 05";
+        this.seccio = "05";
     }
     
     /**

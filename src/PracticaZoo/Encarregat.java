@@ -153,7 +153,7 @@ public class Encarregat extends Empleat implements Veterinari, Cuidador {
     
     /**
      * El objecte encarregat vacuna al objecte au si la vacuna pasada com argument està continguda en la llista vacunes
-     * @param encargat
+     * @param encarregat
      * @param au
      * @param vacunacio 
      */
@@ -229,7 +229,7 @@ public class Encarregat extends Empleat implements Veterinari, Cuidador {
 
     @Override
     public String toString() {
-        return "Encarregat{" + "nom: " + nom + '}';
+        return "Encarregat{" + "nom: " + nom + " ID: "+ID+" Secció:"+seccio+" Sou: "+sou+"}";
     }
     
 
