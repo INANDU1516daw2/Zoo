@@ -6,6 +6,13 @@ import java.util.GregorianCalendar;
 import java.util.Random;
 
 /**
+ * @author Ingemar Andrade
+ * @author Marta Grau
+ * @author Albert Morote
+ * @version 1.0
+ */
+
+/**
  * Creacio de la classe Peix que hereta de Animal
  * 
  */

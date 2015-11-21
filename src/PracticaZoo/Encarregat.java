@@ -4,6 +4,14 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.ArrayList;
+
+/**
+ * @author Ingemar Andrade
+ * @author Marta Grau
+ * @author Albert Morote
+ * @version 1.0
+ */
+
 /**
  * Creció de la classe Encarregat que hereta de Empleat i implementa les interfícies Cuidador i Veterinari
  */
