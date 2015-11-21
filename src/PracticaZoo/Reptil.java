@@ -65,7 +65,7 @@ public class Reptil extends Animal {
         this.reproduccio = "no-catalogat";
         this.ecosistema = "Terrestre";
         this.vacunacio = "no-catalogat";
-        this.seccio = "SECCIÓ 06";
+        this.seccio = "06";
     }
     
     /**
