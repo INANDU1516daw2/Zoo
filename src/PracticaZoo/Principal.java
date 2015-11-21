@@ -1,4 +1,7 @@
 package PracticaZoo;
+
+import java.util.ArrayList;
+
  /**
   * 
   * @author Albert Morote
@@ -8,74 +11,63 @@ package PracticaZoo;
  public class Principal {
      
      public static void main(String[] args) {
-         /**
-          * Creacio de animals
-          */
-         Mamifer mamifer_1 = new Mamifer();
-         mamifer_1.setNom("Manolo");
-         mamifer_1.setRaça("gos");
-         mamifer_1.setAlimentacio("carnívor");
-//         System.out.println(mamifer_1);
+        /**
+        * Reproducció animals diferent raça: surgeix fill amb raça aleatoria entre raça pare o mare
+        */
          
-         Peix  peix_1 = new Peix();
-         peix_1.setNom("Fishy");
-//         System.out.println(peix_1);
-         
-         Reptil reptil_1 = new Reptil();
-         reptil_1.setNom("Dragon");
-         reptil_1.setAlimentacio("omnívor");
-//         System.out.println(reptil_1);
-         
-         Au au_1 = new Au();
-         au_1.setNom("Birdy");
-//         System.out.println(au_1);
-         
-         Artropode artropode_1 = new Artropode();
-         artropode_1.setNom("Bicho");
-//         System.out.println(artropode_1);
-         
-         Amfibi amfibi_1 = new Amfibi();
-         amfibi_1.setNom("Ranita");
-//         System.out.println(amfibi_1);
-         
-         
-         
-//        System.out.println(mamifer_1);
-//        System.out.println(mamifer_1.getNom());
-//        System.out.println("son iguals? " + mamifer_1.equals(mamifer_2));
-//        System.out.println("es vertebrat? " + mamifer_1.isVertebrat());
-//        System.out.println("es femeni? " + mamifer_1.isFemeni());
-//        
+        //Mamifer pare raça gat
+        Mamifer mamifer_1 = new Mamifer();
         mamifer_1.setID("MP01");
         mamifer_1.setRaça("gat");
+        
+        //Mamifer mare raça gos
         Mamifer mamifer_2 = new Mamifer();
         mamifer_2.setID("MM02");
         mamifer_2.setRaça("gos");
         
-        Mamifer mamifer_3 = new Mamifer();
-        System.out.println(mamifer_3);
+        Animal mamifer_3 = new Mamifer();
         mamifer_3.reproduir(mamifer_1.getID(), mamifer_1.getRaça(), mamifer_2.getID(), mamifer_2.getRaça(), "MF03");
-        System.out.println(mamifer_3);
+        
+        System.out.println("");
+        
+        Animal au_1 = new Au();
+        Animal amfibi_1 = new Amfibi();
+        Animal artropode_1 = new Artropode();
+        Animal peix_1 = new Peix();
+        Animal reptil_1 = new Reptil();
+        
+        ArrayList <Animal> llistaAnimals = new ArrayList <Animal>();
+        
+        llistaAnimals.add(mamifer_3);
+        llistaAnimals.add(au_1);
+        llistaAnimals.add(amfibi_1);
+        llistaAnimals.add(artropode_1);
+        llistaAnimals.add(peix_1);
+        llistaAnimals.add(reptil_1);
+
+        
+        /* Polimorfisme, la llista conté objectes tipus Animal, pero el metode toString
+         * es diferent per a cada tipus de animal que sobreescriu el metode de la classe pare
+        */
+        for(Animal e : llistaAnimals){
+            System.out.println(e.toString()); 
+        }
+        
+        System.out.println("");
+        
+        Encarregat Morote = new Encarregat("Morote","42",10,1800);
+        
+        for(Animal e : llistaAnimals){
+            Morote.netejar(Morote.getID(), Morote.getNom(), e.getID() , e.getNom(), e.getSeccio());
+        }
+        
+        System.out.println("");
+        
+        
+        Encarregat Grau = new Encarregat("Marta","666",13,1600);
          
-         Encarregat Morote = new Encarregat("Morote","333",10,1800);
-//         System.out.println(Morote);
-         
-         
-         Encarregat Grau = new Encarregat("Marta","666",13,1600);
-//         System.out.println(Grau);
-         
-         Grau.vacunar_mamifer(Grau, mamifer_1, "colesterol");
-         Grau.vacunar_mamifer(Grau, mamifer_1, "rabia");
-         
-         Grau.tractar(Grau.getID(),Grau.getNom(),peix_1.getID(),peix_1.getNom());
-         Grau.tractar(Grau.getID(),Grau.getNom(),au_1.getID(),au_1.getNom());
-         
-         Morote.netejar(Morote.getID(),Morote.getNom(),au_1.getID(),au_1.getNom());
-         Morote.netejar(Morote.getID(),Morote.getNom(),reptil_1.getID(),reptil_1.getNom());
-         Morote.alimentar(Morote.getID(),Morote.getNom(),reptil_1.getID(),reptil_1.getNom(),reptil_1.getAlimentacio());
-         Morote.alimentar(Morote.getID(),Morote.getNom(),mamifer_1.getID(),mamifer_1.getNom(),mamifer_1.getAlimentacio());
-                
-//         
-             
+        Grau.vacunar_mamifer(Grau, mamifer_1, "colesterol");
+        Grau.vacunar_mamifer(Grau, mamifer_1, "rabia");
+
      }
  }

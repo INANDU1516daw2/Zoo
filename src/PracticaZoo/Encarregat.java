@@ -197,8 +197,9 @@ public class Encarregat extends Empleat implements Veterinari, Cuidador {
      * @see Veterinari
      */
     @Override
-    public void netejar(String ID_encarregat, String nom_encarregat, String ID_animal, String nom_animal) {
-                System.out.println("Encarregat "+ID_encarregat+" de nom "+nom_encarregat+" ha netejat a " + ID_animal+" de nom "+nom_animal);
+    public void netejar(String ID_encarregat, String nom_encarregat, String ID_animal, String nom_animal, String seccio) {
+                System.out.println("Encarregat "+nom_encarregat+" amb ID "+ID_encarregat+" ha netejat a " + ID_animal
+                +" en la secció "+seccio);
     }
 
     /**

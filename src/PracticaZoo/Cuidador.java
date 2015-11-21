@@ -13,7 +13,7 @@ public interface Cuidador {
      * @param ID_animal
      * @param nom_animal 
      */
-    public void netejar(String ID_encarregat, String nom_encarregat, String ID_animal, String nom_animal);
+    public void netejar(String ID_encarregat, String nom_encarregat, String ID_animal, String nom_animal, String seccio);
     
     
     /**
